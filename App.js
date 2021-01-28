@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
-//<FlatList data={calculations} renderItem={({item}) => <Text>{item.key}</Text>} />
 
 export default function App() {
   const [numberOne, setNumberOne] = useState('');
@@ -40,9 +39,6 @@ export default function App() {
 
       <Text>History</Text>
       <FlatList data={calculations} renderItem={({item}) => <Text>{item.key}</Text>} />
-      
-      
-     
     </View>
   );
 }
